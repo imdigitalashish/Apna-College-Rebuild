@@ -1,0 +1,109 @@
+.container {
+
+
+
+    &>.heroSection {
+        background: url("/assets/landing_background.png");
+        height: 100vh;
+        width: 100vw;
+        background-size: cover;
+        position: relative;
+
+        &>.overflow {
+            background: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            width: 100vw;
+            opacity: 60%;
+            z-index: 0;
+        }
+
+        & .heroContent {
+            z-index: 2;
+            position: relative;
+
+           
+
+            &__display {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+                font-size: 16px;
+            }
+
+            
+
+            & h1 {
+                color: white;
+                font-size: 3em;
+            }
+
+            & p {
+                color: #fff;
+                opacity: 80%;
+                font-style: italic;
+                font-size: 1.4em;
+            }
+
+
+            & .CTC {
+                background: #003379;
+                color: white;
+                outline: none;
+                border: none;
+                font-weight: bold;
+                font-family: "Poppins";
+                font-size: 1.5em;
+                width: 350px;
+                height: 70px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all 0.3s;
+            }
+
+            & .CTC:hover {
+                transform: scale(1.09);
+            }
+
+
+        }
+    }
+
+
+}
+
+
+.animationElements {
+    display: flex;
+    flex-direction: column;
+    gap: -2px;
+}
+
+
+svg line {
+    stroke: grey;
+}
+
+
+@media (max-width: 600px) {
+
+
+    .heroContent {
+        text-align: center;
+        
+      
+    }
+
+    .heroContent__display > div {
+        font-size: 10px;
+    }
+
+    .heroContent__display>img {
+        display: none;
+        
+    }
+
+}
