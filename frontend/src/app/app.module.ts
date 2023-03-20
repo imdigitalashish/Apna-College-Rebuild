@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LandingpageComponent } from './pages/landingpage/landingpage.component';
+import { HeroSectionComponent } from './components/hero-section/hero-section.component';
+import { StatsBannerComponent } from './components/stats-banner/stats-banner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LandingpageComponent
+    LandingpageComponent,
+    HeroSectionComponent,
+    StatsBannerComponent
   ],
   imports: [
     BrowserModule,
