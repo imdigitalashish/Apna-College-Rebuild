@@ -40,3 +40,9 @@
 .show {
     opacity: 100% !important;
 }
+
+@media(prefers-reduced-motion) {
+    .card {
+        transition: none;
+    }
+}

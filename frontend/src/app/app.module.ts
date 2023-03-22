@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { LandingpageComponent } from './pages/landingpage/landingpage.component';
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { StatsBannerComponent } from './components/stats-banner/stats-banner.component';
+import { OutStudentComponent } from './components/out-student/out-student.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingpageComponent,
     HeroSectionComponent,
-    StatsBannerComponent
+    StatsBannerComponent,
+    OutStudentComponent
   ],
   imports: [
     BrowserModule,
