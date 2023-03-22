@@ -12,9 +12,31 @@
         margin: 0 auto;
     }
 
-    & .card {
+    & .listOfCards {
+
+        display: flex;
+
+        margin-top: 2.6em;
+        justify-content: space-around;
+        align-items: center;
+        
+
+        & .card {
+            text-align: center;
+            font-weight: bold;
+            opacity: 0%;
+            transition: all 1.5s;
+        }
 
 
-        text-align: center;
+        & p {
+            text-align: center;
+            font-size: 1.8em;
+        }
+
     }
+}
+
+.show {
+    opacity: 100% !important;
 }
