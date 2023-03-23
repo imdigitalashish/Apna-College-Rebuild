@@ -9,6 +9,24 @@
         background-size: cover;
         position: relative;
 
+
+        & .navbar {
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 3em;
+
+            & .apnatrade {
+                color: #FFC700;
+            }
+
+            & .navbar__options {
+                display: flex;
+                gap: 3em;
+            }
+        }
+
         &>.overflow {
             background: black;
             position: absolute;
@@ -24,17 +42,18 @@
             z-index: 2;
             position: relative;
 
-           
+
 
             &__display {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                
+
                 font-size: 16px;
+                height: 60vh;
             }
 
-            
+
 
             & h1 {
                 color: white;
@@ -87,23 +106,67 @@ svg line {
     stroke: grey;
 }
 
+@keyframes arrowAnimation {
+    0% {
+        stroke: white;
+    }
+
+    100% {
+        stroke: grey;
+    }
+}
+
+svg:nth-child(1) line {
+    animation: arrowAnimation 0.8s linear 0s infinite forwards;
+}
+
+svg:nth-child(2) line {
+    animation: arrowAnimation 0.8s linear 1s infinite forwards;
+
+}
+
+svg:nth-child(3) line {
+    animation: arrowAnimation 0.8s linear 2s infinite forwards;
+
+}
+
+svg:nth-child(2) {
+    margin-top: -16px;
+
+}
+
+svg:nth-child(3) {
+    margin-top: -16px;
+}
+
 
 @media (max-width: 600px) {
 
 
     .heroContent {
         text-align: center;
-        
-      
+
+
     }
 
-    .heroContent__display > div {
+    .heroContent__display>div {
         font-size: 10px;
     }
 
     .heroContent__display>img {
         display: none;
-        
+
     }
+
+    .CTC {
+        transform: scale(0.7);
+
+    }
+
+    .animationElements {
+        transform: scale(0.7);
+    }
+
+
 
 }

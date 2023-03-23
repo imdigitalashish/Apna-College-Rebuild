@@ -1,0 +1,48 @@
+.statsBanner {
+    height: 50vh;
+    width: 100vw;
+    background: url("/assets/stats_banner.png");
+    background-size: cover;
+    color: white;
+    padding: 2em;
+
+    & h1 {
+        font-size: 3.2em;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    & .listOfCards {
+
+        display: flex;
+
+        margin-top: 2.6em;
+        justify-content: space-around;
+        align-items: center;
+        
+
+        & .card {
+            text-align: center;
+            font-weight: bold;
+            opacity: 0%;
+            transition: all 1.5s;
+        }
+
+
+        & p {
+            text-align: center;
+            font-size: 1.8em;
+        }
+
+    }
+}
+
+.show {
+    opacity: 100% !important;
+}
+
+@media(prefers-reduced-motion) {
+    .card {
+        transition: none;
+    }
+}
