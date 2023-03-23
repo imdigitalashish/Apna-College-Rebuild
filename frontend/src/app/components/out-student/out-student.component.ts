@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 
 declare var $: any;
@@ -12,9 +12,33 @@ declare var $: any;
 export class OutStudentComponent {
 
 
+
+  intersectionObserver: IntersectionObserver;
+
+
+  constructor() {
+
+    this.intersectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("story_show");
+        }
+      })
+    })
+
+  }
+
+  @ViewChild("buttonCTC") CTC: ElementRef;
+
   ngAfterViewInit() {
 
+    document.querySelectorAll(".story").forEach((elem) => {
+      this.intersectionObserver.observe(elem);
+    });
 
+    this.CTC.nativeElement.onclick = () => {
+      window.open("https://www.apnacollege.in/course/alpha-batch-3");
+    }
 
   }
 

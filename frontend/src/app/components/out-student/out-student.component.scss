@@ -2,6 +2,7 @@
     background: linear-gradient(89.94deg, #0F0C29 54.83%, rgba(17, 15, 46, 0.82244) 119.74%, rgba(29, 29, 71, 0) 420.37%);
     width: 100vw;
     padding-bottom: 5em;
+
     & h2 {
         color: white;
         font-size: 2.2em;
@@ -40,6 +41,9 @@
     width: 30%;
     border-radius: 20px;
     background: #132952;
+    transform: scale(0.8);
+    opacity: 0.7;
+    transition: all 1.6s;
 
     &__avatar {
         display: flex;
@@ -47,7 +51,7 @@
         padding-top: 20px;
     }
 
-    & > h3 {
+    &>h3 {
         display: flex;
         justify-content: center;
         color: white;
@@ -55,7 +59,7 @@
         margin-top: 0.8em;
     }
 
-    & > p {
+    &>p {
         color: white;
         text-align: center;
         padding: 0.7em;
@@ -63,7 +67,12 @@
     }
 }
 
-.our-student-page > h2 {
+.story_show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.our-student-page>h2 {
     width: fit-content;
     color: white;
     padding-top: 2em;
@@ -83,4 +92,8 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s;
+}
+
+.CTC:hover {
+    transform: scale(1.05);
 }

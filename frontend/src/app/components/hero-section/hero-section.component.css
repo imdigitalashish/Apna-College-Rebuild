@@ -143,3 +143,12 @@ svg:nth-child(3) {
         display: none !important;
     }
 }
+
+.navbar__options > p {
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.navbar__options > p:hover {
+    transform: scale(1.2);
+}
