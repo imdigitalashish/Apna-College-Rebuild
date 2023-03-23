@@ -31,5 +31,6 @@ export class StatsBannerComponent {
       this.observer.observe(card);
     })
 
+
   }
 }

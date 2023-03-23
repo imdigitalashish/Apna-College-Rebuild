@@ -7,6 +7,7 @@ import { LandingpageComponent } from './pages/landingpage/landingpage.component'
 import { HeroSectionComponent } from './components/hero-section/hero-section.component';
 import { StatsBannerComponent } from './components/stats-banner/stats-banner.component';
 import { OutStudentComponent } from './components/out-student/out-student.component';
+import { MissionComponent } from './components/mission/mission.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { OutStudentComponent } from './components/out-student/out-student.compon
     LandingpageComponent,
     HeroSectionComponent,
     StatsBannerComponent,
-    OutStudentComponent
+    OutStudentComponent,
+    MissionComponent
   ],
   imports: [
     BrowserModule,
