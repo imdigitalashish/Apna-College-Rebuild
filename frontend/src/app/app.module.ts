@@ -8,6 +8,7 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { StatsBannerComponent } from './components/stats-banner/stats-banner.component';
 import { OutStudentComponent } from './components/out-student/out-student.component';
 import { MissionComponent } from './components/mission/mission.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MissionComponent } from './components/mission/mission.component';
     HeroSectionComponent,
     StatsBannerComponent,
     OutStudentComponent,
-    MissionComponent
+    MissionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
